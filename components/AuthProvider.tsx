@@ -7,7 +7,7 @@ import { useAuth, User } from '@/hooks/useAuth';
 interface AuthContextType {
   user: User | null;
   loading: boolean;
-  login: (email: any, password: any) => Promise<void>;
+  login: (email: string, password: string) => Promise<void>;
   register: (formData: FormData) => Promise<void>;
   logout: () => void;
 }
